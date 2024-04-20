@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { newArrivalBanner, ClearanceSellBanner } from "../../assets/images";
+import { newArrivalBanner, BigDealsBanner } from "../../assets/images";
 import { BannerSkeleton } from "../designLayouts/img-skeleton";
 
 const Banner = () => {
@@ -99,12 +99,12 @@ const Banner = () => {
   return (
     <div className="w-full bg-primeColor border-b-[1px] border-b-[#e2cf64]">
       <Slider {...settings}>
-        <Link to="/shop?type=Clearance%20Sale">
+        <Link to="/shop?type=Big%20Deals">
           <div>
             {loadingBanner && <BannerSkeleton />}
             <img
-              src={ClearanceSellBanner}
-              alt="Clearance Sell Banner"
+              src={BigDealsBanner}
+              alt="Big Deals Banner"
               onLoad={() => setLoadingBanner(false)}
               style={{
                 display: loadingBanner ? "none" : "block",

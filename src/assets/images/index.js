@@ -2,7 +2,7 @@ import logo from "./logoKokohkoki.webp";
 import logoBaru from "./LogoKokohKokiBulet.png";
 import logoBaruNoBg from "./LogoKokohKokiNoBg.png";
 import newArrivalBanner from "./banner/newArrivalBanner.webp";
-import ClearanceSellBanner from "./banner/ClearanceSellBanner.png";
+import BigDealsBanner from "./banner/BigDealsBanner.png";
 import dragonSeriesBanner from "./sale/dragonSeriesBanner.webp";
 import forGroomingBanner from "./sale/forGroomingBanner.webp";
 import premiumSeriesBanner from "./sale/premiumSeriesBanner.webp";
@@ -26,7 +26,7 @@ export {
 
   // Fish Banner
   newArrivalBanner,
-  ClearanceSellBanner,
+  BigDealsBanner,
   dragonSeriesBanner,
   premiumSeriesBanner,
   specialGradeBanner,
