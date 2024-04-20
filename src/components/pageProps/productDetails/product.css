@@ -1,0 +1,67 @@
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    max-height: 80%; 
+    overflow-y: auto; 
+    border-radius: 0.4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .modal {
+      width: 90%; 
+      max-width: none; 
+    }
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  .modal-close {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red; 
+  }
+
+  /* @media (max-width: 375px) {
+    .imageContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+  } */
+
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  
+  @media (min-width: 667px) {
+    .imageContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+  }
+  
+  
