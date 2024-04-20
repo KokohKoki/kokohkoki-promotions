@@ -143,7 +143,8 @@ const Product = (props) => {
           >
             {props.name}
           </h2>
-          <div className="flex flex-col gap-1 justify-start items-start">
+        {/* Price */}
+          {/* <div className="flex flex-col gap-1 justify-start items-start">
             {props.discount === true && (
               <p
                 className="text-[white] text-sm text-[16px] md:text-lg font-bold"
@@ -162,7 +163,7 @@ const Product = (props) => {
             >
               {priceFormatter(props.price, selectedCurrency)}
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-wrap text-black text-[11px] font-medium md:text-xs gap-1 capitalize ">
           <span className="bg-[#e2cf64] px-1 py-0.5 rounded-sm shadow">
