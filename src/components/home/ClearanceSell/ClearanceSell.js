@@ -21,7 +21,7 @@ const ClearanceSale = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${BASE_URL}/fish/search?type=Clearance+Sale&sort=desc`)
+      .get(`${BASE_URL}/fish/search?type=Big+Deals&sort=desc`)
       .then((response) => {
         setProducts(response.data.data);
       })
@@ -83,8 +83,8 @@ const ClearanceSale = () => {
     <>
       {products && products.length > 0 ? (
         <div className="w-full pb-16">
-          <Link to="/shop?type=Clearance%20Sale">
-            <Heading heading="Clearance Sale" />
+          <Link to="/shop?type=Big%20Deals">
+            <Heading heading="Big Deals" />
             <DescHeading desc="Save big, Shop quick !" />
           </Link>
           <Slider {...settings}>
