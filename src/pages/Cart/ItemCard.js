@@ -28,7 +28,7 @@ const ItemCard = ({ item, changeQuantityLoading }) => {
 
       <div className="flex items-center justify-between gap-1 md:gap-6 text-lg mb-2 ml-2">
         <div className="flex items-center text-base md:text-lg font-semibold">
-          {priceFormatter(item.price, selectedCurrency)}
+          ???
         </div>
         {changeQuantityLoading ? (
           <Spinner />
@@ -39,7 +39,7 @@ const ItemCard = ({ item, changeQuantityLoading }) => {
         )}
 
         <div className="flex items-center font-titleFont font-bold  text-base md:text-lg pr-2">
-          <p>{priceFormatter(item.price, selectedCurrency)}</p>
+          <p>???</p>
         </div>
       </div>
     </div>
