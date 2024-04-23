@@ -62,14 +62,12 @@ const ProductInfo = ({ productInfo }) => {
               : "text-xl no-underline opacity-100 "
           }`}
         >
-          Original Price: {priceFormatter(productInfo.price, selectedCurrency)}
+          Original Price: ???
         </p>
         {productInfo.discount === true && (
           <div className="text-xl font-semibold tracking-wide flex flex-wrap gap-1">
             <p>Special Price:</p>
-            <span>
-              {priceFormatter(productInfo.discountPrice, selectedCurrency)}{" "}
-            </span>
+            <span>???</span>
           </div>
         )}
       </div>
